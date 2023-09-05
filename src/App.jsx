@@ -6,6 +6,7 @@ import CheckoutForm from "./components/CheckoutForm";
 const stripePromise = loadStripe("pk_test_51NmgZhIYrzVCZgN4oQ1HwWOY6Ooe6k2Ov7ewrLX9duBcycPK5MWDjqBVoW8AqFjsPIoh3SvYCyJxuOJXQMyEVzmj00KUsMb0EH");
 
 function App() {
+  const [count, setCount] = useState(1)
   return (
     <div>
       <Elements stripe={stripePromise}>
